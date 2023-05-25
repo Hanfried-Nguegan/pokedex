@@ -1,7 +1,13 @@
+import Navbar from "@/components/Navbar";
+
 export default function Home() {
   return (
-    <main className="flex items-center justify-center h-screen">
-      <h1 className="text-bold">Pokemon App</h1>
+    <main className="bg-pokedex-texture bg-cover bg-no-repeat bg-center w-full h-screen">
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Hero Section */}
+      {/* PokemonList Section */}
     </main>
   );
 }
