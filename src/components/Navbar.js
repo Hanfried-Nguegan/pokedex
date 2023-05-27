@@ -14,15 +14,17 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 z-50 w-full box-border">
-      <div className="flex items-center justify-between w-full p-2 max-w-[1400px] mx-auto lg:max-w-[1500px]">
-        <div className="p-1 cursor-pointer">
-          <Image
-            src={pokemonLogo}
-            alt="Pokemon logo"
-            priority="true"
-            className="w-[140px] h-auto md:w-[160px] lg:w-[180px]"
-          />
-        </div>
+      <div className="flex items-center justify-between w-full p-2 max-w-7xl mx-auto">
+        <Link href="/">
+          <div className="p-1 cursor-pointer">
+            <Image
+              src={pokemonLogo}
+              alt="Pokemon logo"
+              priority="true"
+              className="w-[140px] h-auto md:w-[160px] lg:w-[180px]"
+            />
+          </div>
+        </Link>
         <div
           className="flex items-center justify-center cursor-pointer "
           onClick={handleMenuClick}
@@ -37,7 +39,7 @@ const Navbar = () => {
       <nav
         className={`${
           isClicked ? "navOpen " : "navClose"
-        }  navMenu w-full h-full text-right fixed right-0 z-[-1] overflow-x-auto top-0 pt-28 text-white uppercase px-5 md:px-12 whitespace-nowrap pointer-events-auto leading-none `}
+        }  navMenu w-full h-full text-right fixed right-0 z-[-1] overflow-x-auto top-0 pt-28 text-white px-5 md:px-12 whitespace-nowrap pointer-events-auto leading-none `}
       >
         <ul className="inline-block">
           <li>
@@ -52,16 +54,7 @@ const Navbar = () => {
           <li>
             <div className="item">
               <Link href="/">
-                <span className="font-pokemonSolid text-2xl md:text-3xl">
-                  All Pokemon
-                </span>
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="item">
-              <Link href="/">
-                <span className="font-pokemonSolid text-2xl md:text-3xl">
+                <span className="font-pokemonSolid text-3xl md:text-4xl">
                   Berries
                 </span>
               </Link>
@@ -70,7 +63,7 @@ const Navbar = () => {
           <li>
             <div className="item">
               <Link href="/">
-                <span className="font-pokemonSolid text-2xl md:text-3xl">
+                <span className="font-pokemonSolid text-3xl md:text-4xl">
                   My Pokedex
                 </span>
               </Link>
@@ -79,7 +72,16 @@ const Navbar = () => {
           <li>
             <div className="item">
               <Link href="/">
-                <span className="font-pokemonSolid text-2xl md:text-3xl">
+                <span className="font-pokemonSolid text-3xl md:text-4xl">
+                  Pokemon Battle
+                </span>
+              </Link>
+            </div>
+          </li>
+          <li>
+            <div className="item">
+              <Link href="/">
+                <span className="font-pokemonSolid text-3xl md:text-4xl">
                   Compare Pokemon
                 </span>
               </Link>
