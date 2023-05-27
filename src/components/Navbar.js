@@ -42,39 +42,39 @@ const Navbar = () => {
         <ul className="inline-block">
           <li>
             <div className="item">
-              <a href="/">
+              <Link href="/">
                 <span className="font-pokemonSolid text-3xl">Home</span>
-              </a>
+              </Link>
             </div>
           </li>
           <li>
             <div className="item">
-              <a href="/">
+              <Link href="/">
                 <span className="font-pokemonSolid text-3xl">All Pokemon</span>
-              </a>
+              </Link>
             </div>
           </li>
           <li>
             <div className="item">
-              <a href="/">
+              <Link href="/">
                 <span className="font-pokemonSolid text-3xl">Berries</span>
-              </a>
+              </Link>
             </div>
           </li>
           <li>
             <div className="item">
-              <a href="/">
+              <Link href="/">
                 <span className="font-pokemonSolid text-3xl">My Pokedex</span>
-              </a>
+              </Link>
             </div>
           </li>
           <li>
             <div className="item">
-              <a href="/">
+              <Link href="/">
                 <span className="font-pokemonSolid text-3xl">
                   Compare Pokemon
                 </span>
-              </a>
+              </Link>
             </div>
           </li>
         </ul>
