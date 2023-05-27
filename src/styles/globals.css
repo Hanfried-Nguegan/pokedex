@@ -20,42 +20,6 @@
   transition-duration: 0.15s;
 }
 
-.transition {
-  transition-property: background-color, border-color, color, fill, stroke,
-    opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: background-color, border-color, color, fill, stroke,
-    opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: background-color, border-color, color, fill, stroke,
-    opacity, box-shadow, transform, filter, backdrop-filter,
-    -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 0.15s;
-}
-
-.delay-150 {
-  transition-delay: 0.15s;
-}
-
-.delay-200 {
-  transition-delay: 0.2s;
-}
-
-.duration-300 {
-  transition-duration: 0.3s;
-}
-
-.duration-500 {
-  transition-duration: 0.5s;
-}
-
-.duration-700 {
-  transition-duration: 0.7s;
-}
-
-.ease-out-circ {
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
 .toggle-menu:before {
   background-color: rgba(253, 194, 14, var(--tw-bg-opacity));
   z-index: -1;
@@ -92,4 +56,75 @@
   opacity: 0;
   --tw-scale-x: 1.7;
   --tw-scale-y: 1.7;
+}
+
+.navMenu {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  transition: all 0s linear 0.7s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .navMenu {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navMenu {
+    font-size: 3.75vw;
+  }
+}
+
+.navMenu:before {
+  content: "";
+  padding-top: 160vmax;
+  width: 160vmax;
+  transform: translate3d(55%, -50%, 0);
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(253, 194, 14, var(--tw-bg-opacity));
+  opacity: 0;
+  transition: opacity 0.3s 0.15s, transform 0.5s 0.15s;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .navMenu:before {
+    padding-top: 180%;
+    width: 180%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navMenu:before {
+    padding-top: 115%;
+    width: 115%;
+  }
+}
+
+.navOpen {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.navClose {
+  opacity: 0;
+}
+
+.navOpen::before {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  transform: translate3d(42%, -43%, 0);
+  transition-delay: 0s;
+  opacity: 1;
+  transition-duration: 0.7s;
 }
