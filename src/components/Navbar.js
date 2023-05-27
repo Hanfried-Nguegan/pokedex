@@ -43,35 +43,43 @@ const Navbar = () => {
           <li>
             <div className="item">
               <Link href="/">
-                <span className="font-pokemonSolid text-3xl">Home</span>
+                <span className="font-pokemonSolid text-2xl md:text-3xl">
+                  Home
+                </span>
               </Link>
             </div>
           </li>
           <li>
             <div className="item">
               <Link href="/">
-                <span className="font-pokemonSolid text-3xl">All Pokemon</span>
+                <span className="font-pokemonSolid text-2xl md:text-3xl">
+                  All Pokemon
+                </span>
               </Link>
             </div>
           </li>
           <li>
             <div className="item">
               <Link href="/">
-                <span className="font-pokemonSolid text-3xl">Berries</span>
+                <span className="font-pokemonSolid text-2xl md:text-3xl">
+                  Berries
+                </span>
               </Link>
             </div>
           </li>
           <li>
             <div className="item">
               <Link href="/">
-                <span className="font-pokemonSolid text-3xl">My Pokedex</span>
+                <span className="font-pokemonSolid text-2xl md:text-3xl">
+                  My Pokedex
+                </span>
               </Link>
             </div>
           </li>
           <li>
             <div className="item">
               <Link href="/">
-                <span className="font-pokemonSolid text-3xl">
+                <span className="font-pokemonSolid text-2xl md:text-3xl">
                   Compare Pokemon
                 </span>
               </Link>
