@@ -20,13 +20,13 @@
   transition-duration: 0.15s;
 }
 
-.toggle-menu:before {
+.toggleMenu:before {
   background-color: rgba(253, 194, 14, var(--tw-bg-opacity));
   z-index: -1;
 }
 
-.toggle-menu:after,
-.toggle-menu:before {
+.toggleMenu:after,
+.toggleMenu:before {
   content: "";
   height: 100%;
   width: 100%;
@@ -48,7 +48,7 @@
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.toggle-menu:hover:before {
+.toggleMenu:hover:before {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 0.15s;
