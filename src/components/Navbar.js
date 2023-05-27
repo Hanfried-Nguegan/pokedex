@@ -37,9 +37,47 @@ const Navbar = () => {
       <nav
         className={`${
           isClicked ? "navOpen " : "navClose"
-        }  navMenu w-full h-full text-right fixed right-0 z-[-1] overflow-x-auto top-0 pt-28 md:pt-36 lg:pt-40 text-white uppercase px-5 md:px-12 lg:px-32 whitespace-nowrap pointer-events-auto leading-none `}
+        }  navMenu w-full h-full text-right fixed right-0 z-[-1] overflow-x-auto top-0 pt-28 text-white uppercase px-5 md:px-12 whitespace-nowrap pointer-events-auto leading-none `}
       >
-        <p>Menu</p>
+        <ul className="inline-block">
+          <li>
+            <div className="item">
+              <a href="/">
+                <span className="font-pokemonSolid text-3xl">Home</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="item">
+              <a href="/">
+                <span className="font-pokemonSolid text-3xl">All Pokemon</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="item">
+              <a href="/">
+                <span className="font-pokemonSolid text-3xl">Berries</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="item">
+              <a href="/">
+                <span className="font-pokemonSolid text-3xl">My Pokedex</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="item">
+              <a href="/">
+                <span className="font-pokemonSolid text-3xl">
+                  Compare Pokemon
+                </span>
+              </a>
+            </div>
+          </li>
+        </ul>
       </nav>
     </header>
   );

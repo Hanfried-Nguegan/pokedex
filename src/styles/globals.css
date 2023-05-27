@@ -8,6 +8,17 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: pokemonSolid;
+  src: url("/fonts/Pokemon\ Solid.ttf");
+}
+
+*,
+:after,
+:before {
+  position: relative;
+}
+
 .shadow-xl {
   --tw-shadow: 10px 10px 0px rgba(0, 0, 0, 0.2);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),
@@ -119,6 +130,12 @@
   opacity: 0;
 }
 
+.navOpen .navMenu {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
 .navOpen::before {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -127,4 +144,126 @@
   transition-delay: 0s;
   opacity: 1;
   transition-duration: 0.7s;
+}
+
+.navOpen .navMenu:before {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  transform: translate3d(42%, -43%, 0);
+  transition-delay: 0s;
+  opacity: 1;
+  transition-duration: 0.7s;
+}
+
+.navOpen ul li .item {
+  opacity: 1;
+  transform: none;
+}
+
+.navOpen ul li:first-child .item {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+
+.navOpen ul li:nth-child(2) .item {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0.365s;
+}
+
+.navOpen ul li:nth-child(3) .item {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0.43s;
+}
+
+.navOpen ul li:nth-child(4) .item {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0.495s;
+}
+
+.navOpen ul li:nth-child(5) .item {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0.56s;
+}
+
+.navMenu ul li a:hover:after {
+  --tw-scale-x: 1;
+  transition-delay: 0.1s;
+}
+
+.navMenu ul li a:hover span {
+  --tw-text-opacity: 1;
+  color: rgba(38, 80, 254, var(--tw-text-opacity));
+  --tw-translate-x: -3.5rem;
+}
+
+.navOpen ul li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: static;
+}
+
+@media (min-width: 768px) {
+  .navMenu ul li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.navClose ul li .item {
+  opacity: 0;
+}
+
+.navOpen .navMenu ul li .item {
+  display: inline-block;
+  opacity: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0)
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-translate-y: 2.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  transition-duration: 0.5s;
+}
+
+.navMenu .navOpen ul li a:after {
+  height: 0.375rem;
+  width: 2.5rem;
+  top: 50%;
+  right: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-translate-y: -50%;
+  --tw-scale-x: 0;
+  --tw-bg-opacity: 1;
+  margin-top: -0.125rem;
+  transform-origin: right;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.navMenu ul li a span {
+  display: inline-block;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0)
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition: color 0.3s, transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
