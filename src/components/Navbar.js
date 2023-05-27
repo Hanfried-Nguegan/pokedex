@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 z-50 w-full box-border">
-      <div className="flex items-center justify-between w-full p-2 max-w-[1400px] mx-auto">
+      <div className="flex items-center justify-between w-full p-2 max-w-[1400px] mx-auto lg:max-w-[1500px]">
         <div className="p-1 cursor-pointer">
           <Image
             src={pokemonLogo}
@@ -37,7 +37,7 @@ const Navbar = () => {
       <nav
         className={`${
           isClicked ? "navOpen " : "navClose"
-        }  navMenu w-full h-full text-right fixed right-0 z-[-1] overflow-x-auto top-0 pt-28 md:pt-36 lg:pt-40 text-white uppercase px-5 md:px-12 lg:px-48 whitespace-nowrap pointer-events-auto leading-none `}
+        }  navMenu w-full h-full text-right fixed right-0 z-[-1] overflow-x-auto top-0 pt-28 md:pt-36 lg:pt-40 text-white uppercase px-5 md:px-12 lg:px-32 whitespace-nowrap pointer-events-auto leading-none `}
       >
         <p>Menu</p>
       </nav>
