@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { pokemonLogo, hamburgerMenu } from "@/images";
+import { pokemonLogo } from "@/images";
 
 const Navbar = () => {
   const [isClicked, setIsClicked] = useState(false);
-  const [isOpenMenu, setIsOpenMenu] = useState(false);
-  const [isCloseMenu, setIsCloseMenu] = useState(false);
 
   const handleMenuClick = () => {
     setIsClicked((prevState) => !prevState);
@@ -39,9 +37,9 @@ const Navbar = () => {
       <nav
         className={`${
           isClicked ? "navOpen " : "navClose"
-        }  navMenu w-full h-full text-right fixed right-0 z-[-1] overflow-x-auto top-0 pt-28 text-white px-5 md:px-12 whitespace-nowrap pointer-events-auto leading-none `}
+        }  navMenu w-full h-full text-right fixed right-0 z-[-1] overflow-x-auto top-0 pt-28 text-white px-5 md:px-12 whitespace-nowrap uppercase pointer-events-auto leading-none `}
       >
-        <ul className="inline-block">
+        <ul className="inline-block" onClick={() => setIsClicked(false)}>
           <li>
             <div className="item">
               <Link href="/">
@@ -89,7 +87,7 @@ const Navbar = () => {
           </li>
           <li>
             <div className="item">
-              <Link href="/">
+              <Link href="/about">
                 <span className="font-pokemonSolid text-3xl md:text-4xl">
                   About/Contact Us
                 </span>

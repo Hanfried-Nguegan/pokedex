@@ -1,3 +1,4 @@
+import Layout from "@/components/Layout";
 import "@/styles/globals.css";
 import Head from "next/head";
 
@@ -8,7 +9,9 @@ export default function App({ Component, pageProps }) {
         <title>Pokemon Tracker</title>
         <link rel="icon" href="/images/pokeball2.png" />
       </Head>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }
