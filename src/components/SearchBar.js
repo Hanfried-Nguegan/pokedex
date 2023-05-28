@@ -7,7 +7,7 @@ const SearchBar = () => {
     <div className="flex items-center justify-center">
       <div className="relative w-full md:w-3/5 px-2">
         <div className="relative flex items-center justify-between bg-white rounded-full p-2 shadow-2xl drop-shadow-2xl">
-          <div className="absolute -top-3 left-1/2 transform w-[130px] md:w-[150px] -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute -top-4 left-1/2 transform w-[130px] md:w-[150px] -translate-x-1/2 -translate-y-1/2">
             <Image src={snorlax} alt="snorlax image" />
           </div>
           <div>

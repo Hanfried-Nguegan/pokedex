@@ -37,7 +37,7 @@ const Navbar = () => {
       <nav
         className={`${
           isClicked ? "navOpen " : "navClose"
-        }  navMenu w-full h-full text-right fixed right-0 z-[-1] overflow-x-auto top-0 pt-28 text-white px-5 md:px-12 whitespace-nowrap uppercase pointer-events-auto leading-none `}
+        }  navMenu w-full h-full text-right fixed right-0 z-[-1] overflow-x-auto top-0 pt-28 text-white px-5 md:px-12 whitespace-nowrap pointer-events-auto leading-none `}
       >
         <ul className="inline-block" onClick={() => setIsClicked(false)}>
           <li>
