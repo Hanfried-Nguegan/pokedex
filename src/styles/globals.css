@@ -181,6 +181,10 @@
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0.56s;
 }
 
+.navOpen ul li:nth-child(6) .item {
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0.625s;
+}
+
 .navMenu ul li a:hover:after {
   --tw-scale-x: 1;
   transition-delay: 0.1s;

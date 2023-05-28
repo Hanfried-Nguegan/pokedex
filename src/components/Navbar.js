@@ -45,7 +45,7 @@ const Navbar = () => {
           <li>
             <div className="item">
               <Link href="/">
-                <span className="font-pokemonSolid text-2xl md:text-3xl">
+                <span className="font-pokemonSolid text-3xl md:text-4xl">
                   Home
                 </span>
               </Link>
@@ -83,6 +83,15 @@ const Navbar = () => {
               <Link href="/">
                 <span className="font-pokemonSolid text-3xl md:text-4xl">
                   Compare Pokemon
+                </span>
+              </Link>
+            </div>
+          </li>
+          <li>
+            <div className="item">
+              <Link href="/">
+                <span className="font-pokemonSolid text-3xl md:text-4xl">
+                  About/Contact Us
                 </span>
               </Link>
             </div>
