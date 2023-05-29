@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         pokemonSolid: ["pokemonSolid", "cursive"],
+        pressStart2P: ["pressStart2P", "cursive"],
       },
     },
   },

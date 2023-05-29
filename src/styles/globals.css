@@ -13,11 +13,18 @@
   src: url("/fonts/Pokemon Solid.ttf");
 }
 
+@font-face {
+  font-family: pressStart2P;
+  src: url("/fonts/PressStart2P.ttf");
+}
+
 *,
 :after,
 :before {
   position: relative;
 }
+
+/* CSS Classes */
 
 .shadow-xl {
   --tw-shadow: 10px 10px 0px rgba(0, 0, 0, 0.2);
@@ -270,4 +277,10 @@
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   transition: color 0.3s, transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* Tailwindcss Utility Classes */
+
+.weezing {
+  @apply absolute hidden md:w-[140px] lg:w-[160px] md:inline-flex -top-3 md:right-20 lg:right-40;
 }

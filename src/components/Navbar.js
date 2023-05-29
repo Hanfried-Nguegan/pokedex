@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { pokemonLogo } from "@/images";
+import { navLinks } from "@/constants";
 
-const Navbar = () => {
+const Navbar = ({ id, title, url }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleMenuClick = () => {
@@ -40,60 +41,17 @@ const Navbar = () => {
         }  navMenu w-full h-full text-right fixed right-0 z-[-1] overflow-x-auto top-0 pt-28 text-white px-5 md:px-12 whitespace-nowrap pointer-events-auto leading-none `}
       >
         <ul className="inline-block" onClick={() => setIsClicked(false)}>
-          <li>
-            <div className="item">
-              <Link href="/">
-                <span className="font-pokemonSolid text-3xl md:text-4xl">
-                  Home
-                </span>
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="item">
-              <Link href="/">
-                <span className="font-pokemonSolid text-3xl md:text-4xl">
-                  Berries
-                </span>
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="item">
-              <Link href="/">
-                <span className="font-pokemonSolid text-3xl md:text-4xl">
-                  My Pokedex
-                </span>
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="item">
-              <Link href="/">
-                <span className="font-pokemonSolid text-3xl md:text-4xl">
-                  Pokemon Battle
-                </span>
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="item">
-              <Link href="/">
-                <span className="font-pokemonSolid text-3xl md:text-4xl">
-                  Compare Pokemon
-                </span>
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="item">
-              <Link href="/about">
-                <span className="font-pokemonSolid text-3xl md:text-4xl">
-                  About/Contact Us
-                </span>
-              </Link>
-            </div>
-          </li>
+          {navLinks.map(({ id, url, title }) => (
+            <li key={id}>
+              <div className="item">
+                <Link href={url}>
+                  <span className="font-pokemonSolid text-3xl md:text-4xl">
+                    {title}
+                  </span>
+                </Link>
+              </div>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
