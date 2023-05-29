@@ -25,7 +25,7 @@ const Hero = () => {
                   className="w-[400px] md:w-[420px] lg:w-[500px]"
                 />
               </span>
-              <p className="font-pressStart2P px-4 -mt-7 text-[9px] md:text-[10px] lg:text-[12px] text-center font-semibold text-black text-opacity-80 leading-5 md:leading-8">
+              <p className="font-pressStart2P px-4 -mt-7 text-[9px] md:text-[10px] lg:text-[12px] text-center font-semibold text-black text-opacity-80 leading-5 md:leading-7 lg:leading-8">
                 Introducing a Pokemon Tracker App,
                 <br /> This App combines advanced mapping <br /> tech with
                 real-time data fetching.
