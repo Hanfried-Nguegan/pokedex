@@ -8,6 +8,7 @@ import pokemonStatsTracker from "./pokemon_stats_tracker.svg";
 import github from "./github.svg";
 import twitter from "./twitter.svg";
 import pinterest from "./pinterest.svg";
+import starmie from "./shiny_starmie.svg";
 
 export {
   pokemonLogo,
@@ -20,4 +21,5 @@ export {
   github,
   twitter,
   pinterest,
+  starmie,
 };
