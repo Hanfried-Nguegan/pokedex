@@ -1,4 +1,4 @@
-import pokemonLogo from "./pokemon-logo-png.svg";
+import pokemonLogo from "./pokemon-logo.svg";
 import pokedex from "./pokedex.svg";
 import pokeball from "./pokeball.svg";
 import searchIcon from "./search_icon.svg";
@@ -11,6 +11,8 @@ import pinterest from "./pinterest.svg";
 import starmie from "./shiny_starmie.svg";
 import ForwardArrow from "./arrow_forward.svg";
 import BackArrow from "./arrow_back.svg";
+import lightning from "./lightning.svg";
+import pichu from "./pichu.svg";
 
 export {
   pokemonLogo,
@@ -26,4 +28,6 @@ export {
   starmie,
   ForwardArrow,
   BackArrow,
+  lightning,
+  pichu,
 };

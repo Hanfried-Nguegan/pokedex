@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="flex items-center justify-between px-4 py-4 max-w-5xl mx-auto">
         <div className="flex w-full items-center justify-center md:justify-start">
           <div className="relative">
-            <div className="absolute -top-16 -left-20 z-0">
+            <div className="absolute -top-12 -left-20 z-0">
               <Image src={starmie} width={150} />
             </div>
             <div className="heroCard">

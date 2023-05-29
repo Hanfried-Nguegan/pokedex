@@ -12,7 +12,7 @@ export default function Home() {
       {/* Search Bar Component */}
       <SearchBar />
 
-      <div className="absolute inset-0 top-[90px]">
+      <div className="absolute inset-0 top-[100px]">
         {/* Hero Section */}
         <Hero />
 

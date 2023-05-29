@@ -297,3 +297,11 @@
 .findMe {
   @apply bg-pokemonYellow font-pokemonSolid text-[10px] md:text-[15px] px-4 py-2 rounded-xl;
 }
+
+.backArrow {
+  @apply absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-1 cursor-pointer border-2 border-pokemonYellow;
+}
+
+.forwardArrow {
+  @apply absolute right-0 bottom-1/2 translate-x-1/2 translate-y-1/2 bg-white rounded-full p-1 cursor-pointer border-2 border-pokemonYellow;
+}
