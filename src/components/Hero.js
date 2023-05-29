@@ -15,7 +15,7 @@ const Hero = () => {
                 className="w-[400px] md:w-[420px] lg:w-[500px]"
               />
             </span>
-            <p className="font-pressStart2P px-4 -mt-7 text-xs text-center font-semibold text-black text-opacity-80 leading-8">
+            <p className="font-pressStart2P px-4 -mt-7 text-[9px] md:text-[10px] lg:text-[12px] text-center font-semibold text-black text-opacity-80 leading-5 md:leading-8">
               Introducing a Pokemon Tracker App,
               <br /> This App combines advanced mapping <br /> tech with
               real-time data fetching.
@@ -24,21 +24,21 @@ const Hero = () => {
               <br />
               Pokemon species,type and abilities
             </p>
-            <div className="flex items-center justify-between px-4 lg:px-10 mt-2 mb-2">
+            <div className="flex items-center justify-between px-10  mt-2 mb-2">
               <div className="w-full">
-                <button className="bg-pokemonYellow font-pokemonSolid px-6 py-2 rounded-xl">
+                <button className="bg-pokemonYellow font-pokemonSolid text-[10px] md:text-[15px] px-4 py-2 rounded-xl">
                   Find me on
                 </button>
               </div>
               <div className="flex items-center mr-10 space-x-3 w-full">
                 <Link href="https://github.com/Hanfried-Nguegan">
-                  <Image src={github} width={30} />
+                  <Image src={github} className="w-7 md:w-9" />
                 </Link>
                 <Link href="https://twitter.com/HanfriedNguegan">
-                  <Image src={twitter} width={30} />
+                  <Image src={twitter} className="w-7 md:w-9" />
                 </Link>
                 <Link href="https://www.pinterest.com/hanfriednguegan/">
-                  <Image src={pinterest} width={30} />
+                  <Image src={pinterest} className="w-7 md:w-9" />
                 </Link>
               </div>
             </div>
