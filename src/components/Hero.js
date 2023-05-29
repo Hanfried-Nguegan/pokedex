@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import HeroSwiper from "./HeroSwiper";
 import {
   pokemonStatsTracker,
   pinterest,
@@ -12,20 +13,20 @@ import {
 const Hero = () => {
   return (
     <div className="relative w-full mt-2 md:mt-10 mx-auto">
-      <div className="flex items-center justify-between px-4 py-4 max-w-6xl mx-auto">
+      <div className="flex items-center justify-between px-4 py-4 max-w-5xl mx-auto">
         <div className="flex w-full items-center justify-center md:justify-start">
           <div className="relative">
             <div className="absolute -top-16 -left-20 z-0">
               <Image src={starmie} width={150} />
             </div>
-            <div className="flex flex-col bg-white bg-opacity-80 border-2 border-black border-opacity-60 shadow-xl hover:drop-shadow-xl relative z-10">
+            <div className="heroCard">
               <span>
                 <Image
                   src={pokemonStatsTracker}
                   className="w-[400px] md:w-[420px] lg:w-[500px]"
                 />
               </span>
-              <p className="font-pressStart2P px-4 -mt-7 text-[9px] md:text-[10px] lg:text-[12px] text-center font-semibold text-black text-opacity-80 leading-5 md:leading-7 lg:leading-8">
+              <p className="heroParagraph">
                 Introducing a Pokemon Tracker App,
                 <br /> This App combines advanced mapping <br /> tech with
                 real-time data fetching.
@@ -36,9 +37,7 @@ const Hero = () => {
               </p>
               <div className="flex items-center justify-between px-10  mt-2 mb-2">
                 <div className="w-full">
-                  <button className="bg-pokemonYellow font-pokemonSolid text-[10px] md:text-[15px] px-4 py-2 rounded-xl">
-                    Find me on
-                  </button>
+                  <button className="findMe">Find me on</button>
                 </div>
                 <div className="flex items-center mr-10 space-x-3 w-full">
                   <Link href="https://github.com/Hanfried-Nguegan">
@@ -55,7 +54,9 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hidden md:inline-flex">right</div>
+        <div className="hidden md:inline-flex w-full justify-end">
+          <HeroSwiper />
+        </div>
       </div>
     </div>
   );

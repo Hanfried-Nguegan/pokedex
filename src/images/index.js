@@ -9,6 +9,8 @@ import github from "./github.svg";
 import twitter from "./twitter.svg";
 import pinterest from "./pinterest.svg";
 import starmie from "./shiny_starmie.svg";
+import ForwardArrow from "./arrow_forward.svg";
+import BackArrow from "./arrow_back.svg";
 
 export {
   pokemonLogo,
@@ -22,4 +24,6 @@ export {
   twitter,
   pinterest,
   starmie,
+  ForwardArrow,
+  BackArrow,
 };

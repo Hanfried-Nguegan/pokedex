@@ -18,6 +18,11 @@ module.exports = {
         pokemonSolid: ["pokemonSolid", "cursive"],
         pressStart2P: ["pressStart2P", "cursive"],
       },
+      screens: {
+        sm: "448px",
+        md: "768px",
+        lg: "1024px",
+      },
     },
   },
   plugins: [],
