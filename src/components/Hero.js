@@ -14,7 +14,7 @@ import {
 
 const Hero = () => {
   return (
-    <div className="relative w-full mt-5 mb-10 md:mt-10 mx-auto">
+    <div className="relative w-full mt-2 mb-10 md:mt-10 mx-auto">
       <div className="flex items-center justify-between px-4 py-4 max-w-5xl mx-auto">
         <div className="flex w-full items-center justify-center md:justify-start">
           <div className="relative">
@@ -61,7 +61,7 @@ const Hero = () => {
         </div>
       </div>
       <HeroMarquee />
-      <div className="flex items-center justify-center lg:justify-start mt-3 mb-3 max-w-7xl mx-auto cursor-pointer">
+      <div className="flex items-center justify-center lg:justify-start mt-10 mb-3 max-w-7xl mx-auto cursor-pointer">
         <div className="flex items-center justify-center bg-pokemon_texture w-20 h-20 md:w-24 md:h-24 rounded-full shadow-lg ">
           <Image
             src={downArrow}
