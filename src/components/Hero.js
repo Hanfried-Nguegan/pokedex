@@ -30,8 +30,9 @@ const Hero = () => {
               </span>
               <p className="heroParagraph">
                 Introducing a Pokemon Tracker App,
-                <br /> This App combines advanced mapping <br /> tech with
-                real-time data fetching.
+                <br /> This App combines advanced mapping
+                <br />
+                tech with real-time data fetching.
                 <br />
                 You can effortlessly track various
                 <br />
