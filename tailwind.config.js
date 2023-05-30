@@ -20,11 +20,6 @@ module.exports = {
         pressStart2P: ["pressStart2P", "cursive"],
       },
 
-      screens: {
-        sm: "375px",
-        md: "768px",
-        lg: "1024px",
-      },
       animation: {
         "spin-slow": "spin 8s linear infinite",
       },
