@@ -15,6 +15,8 @@ import lightning from "./lightning.svg";
 import pichu from "./pichu.svg";
 import pokeball2 from "./pokeball2.png";
 import downArrow from "./down_arrow.svg";
+import pikachu from "./pikachu.svg";
+import raichu from "./raichu.svg";
 
 export {
   pokemonLogo,
@@ -34,4 +36,6 @@ export {
   pichu,
   pokeball2,
   downArrow,
+  pikachu,
+  raichu,
 };

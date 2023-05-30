@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroSwiper from "./HeroSwiper";
 import HeroMarquee from "./HeroMarquee";
+
 import {
   pokemonStatsTracker,
   pinterest,
@@ -30,7 +31,8 @@ const Hero = () => {
               </span>
               <p className="heroParagraph">
                 Introducing a Pokemon Tracker App,
-                <br /> This App combines advanced mapping
+                <br />
+                This App combines advanced mapping
                 <br />
                 tech with real-time data fetching.
                 <br />
