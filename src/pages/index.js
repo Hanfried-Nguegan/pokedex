@@ -11,12 +11,10 @@ export default function Home() {
       </div>
       {/* Search Bar Component */}
       <SearchBar />
-
       <div className="absolute inset-0 top-[100px]">
         {/* Hero Section */}
         <Hero />
         {/* PokemonList Section */}
-        <PokemonList />
       </div>
     </main>
   );

@@ -19,10 +19,20 @@ module.exports = {
         pokemonSolid: ["pokemonSolid", "cursive"],
         pressStart2P: ["pressStart2P", "cursive"],
       },
+
       screens: {
-        sm: "448px",
+        sm: "375px",
         md: "768px",
         lg: "1024px",
+      },
+      animation: {
+        "spin-slow": "spin 8s linear infinite",
+      },
+      keyframes: {
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
     },
   },
