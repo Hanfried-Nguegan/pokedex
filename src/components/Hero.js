@@ -14,7 +14,7 @@ import {
 
 const Hero = () => {
   return (
-    <div className="relative w-full mb-10 mx-auto">
+    <div className="relative w-full mt-1 mb-10 mx-auto">
       <div className="flex items-center justify-between px-4 py-4 max-w-5xl mx-auto">
         <div className="flex w-full items-center justify-center md:justify-start">
           <div className="relative">
