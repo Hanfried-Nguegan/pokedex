@@ -30,3 +30,39 @@ export const navLinks = [
     url: "./about",
   },
 ];
+
+export const marqueeItems = [
+  {
+    id: "explore_pokemon",
+    title: "Explore Pokemon",
+  },
+  {
+    id: "discover_stats",
+    title: "Discover Stats",
+  },
+  {
+    id: "catch_em_all",
+    title: "Catch 'Em All",
+  },
+
+  {
+    id: "pickle_rick",
+    title: "Pickle Rick ?",
+  },
+  {
+    id: "add_pokemon",
+    title: "Add Pokemon",
+  },
+  {
+    id: "explore_types",
+    title: "Explore Types",
+  },
+  {
+    id: "find_berries",
+    title: "Find Berries",
+  },
+  {
+    id: "battle_soon",
+    title: "Battle Soon",
+  },
+];

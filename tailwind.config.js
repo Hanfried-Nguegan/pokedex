@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "pokedex-texture": "url('/images/pokedex_background.webp')",
+        pokemon_texture: "url('/images/pokemon_texture.jpg')",
       },
       colors: {
         pokemonYellow: "#fdc20e",

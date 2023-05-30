@@ -3,5 +3,6 @@ import Navbar from "./Navbar";
 import SearchBar from "./SearchBar";
 import PokemonList from "./PokemonList";
 import Layout from "./Layout";
+import HeroMarquee from "./HeroMarquee";
 
-export { Hero, Navbar, SearchBar, PokemonList, Layout };
+export { Hero, Navbar, SearchBar, PokemonList, Layout, HeroMarquee };

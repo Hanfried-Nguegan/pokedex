@@ -13,6 +13,8 @@ import ForwardArrow from "./arrow_forward.svg";
 import BackArrow from "./arrow_back.svg";
 import lightning from "./lightning.svg";
 import pichu from "./pichu.svg";
+import pokeball2 from "./pokeball2.png";
+import downArrow from "./down_arrow.svg";
 
 export {
   pokemonLogo,
@@ -30,4 +32,6 @@ export {
   BackArrow,
   lightning,
   pichu,
+  pokeball2,
+  downArrow,
 };
