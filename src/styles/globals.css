@@ -299,9 +299,9 @@
 }
 
 .backArrow {
-  @apply absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-1 cursor-pointer border-2 border-pokemonYellow;
+  @apply absolute z-50 left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-1 cursor-pointer border-2 border-pokemonYellow;
 }
 
 .forwardArrow {
-  @apply absolute right-0 bottom-1/2 translate-x-1/2 translate-y-1/2 bg-white rounded-full p-1 cursor-pointer border-2 border-pokemonYellow;
+  @apply absolute z-50 right-0 bottom-1/2 translate-x-1/2 translate-y-1/2 bg-white rounded-full p-1 cursor-pointer border-2 border-pokemonYellow;
 }

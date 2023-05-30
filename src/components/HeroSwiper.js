@@ -38,7 +38,7 @@ const HeroSwiper = () => {
       <div className="forwardArrow" onClick={goNext}>
         <Image src={ForwardArrow} width={25} />
       </div>
-      <div className="absolute top-[20%] left-0 -translate-x-1/2 -translate-y-1/2 bg-white p-1 border-2 border-pokemonYellow rounded-full">
+      <div className="absolute z-50 top-[20%] left-0 -translate-x-1/2 -translate-y-1/2 bg-white p-1 border-2 border-pokemonYellow rounded-full">
         <Image src={lightning} width={30} />
       </div>
       <Swiper

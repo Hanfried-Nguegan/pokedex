@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroSwiper from "./HeroSwiper";
 import HeroMarquee from "./HeroMarquee";
-
+import { motion } from "framer-motion";
+import { slideIn, fadeIn } from "@/utils/motion";
 import {
   pokemonStatsTracker,
   pinterest,
@@ -17,7 +18,12 @@ const Hero = () => {
   return (
     <div className="relative w-full mt-1 mb-10 mx-auto">
       <div className="flex items-center justify-between px-4 py-4 max-w-5xl mx-auto">
-        <div className="flex w-full items-center justify-center md:justify-start">
+        <motion.div
+          variants={slideIn("left", "tween", 0.4, 1)}
+          initial="hidden"
+          animate="show"
+          className="flex relative z-50 w-full  items-center justify-center md:justify-start"
+        >
           <div className="relative">
             <div className="absolute -top-12 -left-20 z-0 animate-spin-slow ">
               <Image src={starmie} width={150} />
@@ -58,13 +64,29 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="hidden md:inline-flex w-full justify-end">
+        </motion.div>
+        <motion.div
+          variants={slideIn("right", "tween", 0.4, 1)}
+          initial="hidden"
+          animate="show"
+          className="hidden md:inline-flex w-full justify-end"
+        >
           <HeroSwiper />
-        </div>
+        </motion.div>
       </div>
-      <HeroMarquee />
-      <div className="flex items-center justify-center lg:justify-start mt-3 mb-3 max-w-7xl mx-auto cursor-pointer">
+      <motion.div
+        variants={fadeIn("right", "tween", 0.2, 1)}
+        initial="hidden"
+        animate="show"
+      >
+        <HeroMarquee />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="flex items-center justify-center lg:justify-start mt-3 mb-3 max-w-7xl mx-auto cursor-pointer"
+      >
         <div className="flex items-center justify-center bg-pokemon_texture w-20 h-20 md:w-24 md:h-24 rounded-full shadow-lg ">
           <Image
             src={downArrow}
@@ -72,7 +94,7 @@ const Hero = () => {
             className="motion-safe:animate-bounce"
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
