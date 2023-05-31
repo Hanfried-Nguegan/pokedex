@@ -12,7 +12,7 @@ export default function Home() {
       {/* Search Bar Component */}
       <SearchBar />
 
-      <div className="absolute top-[120px]">
+      <div className="absolute inset-0 top-[120px]">
         {/* Hero Section */}
         <Hero />
         {/* PokemonList Section */}
