@@ -1,10 +1,17 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { slideIn } from "@/utils/motion";
 import { pokeball, searchIcon, snorlax } from "@/images";
 
 const SearchBar = () => {
   return (
-    <div className="fixed flex items-center justify-center bottom-0 left-0 w-full p-2 z-50">
+    <motion.div
+      variants={slideIn("left", "tween", 0.4, 1)}
+      initial="hidden"
+      animate="show"
+      className="fixed flex items-center justify-center bottom-0 left-0 w-full p-2 z-50"
+    >
       <div className="w-full md:w-[60%] lg:w-[70%] bg-white rounded-full shadow-lg drop-shadow-lg">
         <div className="relative flex items-center justify-between p-2">
           <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -23,7 +30,7 @@ const SearchBar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
