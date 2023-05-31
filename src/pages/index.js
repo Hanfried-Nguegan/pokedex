@@ -11,7 +11,8 @@ export default function Home() {
       </div>
       {/* Search Bar Component */}
       <SearchBar />
-      <div className="absolute inset-0 top-[100px]">
+
+      <div className="absolute inset-0 top-[120px]">
         {/* Hero Section */}
         <Hero />
         {/* PokemonList Section */}
