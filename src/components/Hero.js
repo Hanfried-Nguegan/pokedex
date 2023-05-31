@@ -19,7 +19,7 @@ const Hero = () => {
     <div className="relative w-full mt-1 mb-10 mx-auto">
       <div className="flex items-center justify-between px-4 py-4 max-w-5xl mx-auto">
         <motion.div
-          variants={slideIn("left", "tween", 0.4, 1)}
+          variants={slideIn("left", "tween", 0.5, 1)}
           initial="hidden"
           animate="show"
           className="flex relative z-50 w-full  items-center justify-center md:justify-start"
@@ -66,7 +66,7 @@ const Hero = () => {
           </div>
         </motion.div>
         <motion.div
-          variants={slideIn("right", "tween", 0.4, 1)}
+          variants={slideIn("right", "tween", 0.6, 1)}
           initial="hidden"
           animate="show"
           className="hidden md:inline-flex w-full justify-end"
@@ -75,7 +75,7 @@ const Hero = () => {
         </motion.div>
       </div>
       <motion.div
-        variants={fadeIn("right", "tween", 0.3, 1)}
+        variants={fadeIn("right", "tween", 0.4, 1)}
         initial="hidden"
         animate="show"
       >

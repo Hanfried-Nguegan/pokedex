@@ -7,7 +7,7 @@ import { pokeball, searchIcon, snorlax } from "@/images";
 const SearchBar = () => {
   return (
     <motion.div
-      variants={slideIn("left", "tween", 0.4, 1)}
+      variants={slideIn("left", "tween", 0.7, 1.1)}
       initial="hidden"
       animate="show"
       className="fixed flex items-center justify-center bottom-0 left-0 w-full p-2 z-50"
