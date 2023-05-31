@@ -9,13 +9,11 @@ export default function Home() {
       <div className="weezing">
         <Image src={weezing} className="transform -rotate-[12deg]" />
       </div>
-      {/* Search Bar Component */}
       <SearchBar />
-
-      <div className="absolute inset-0 top-[120px]">
-        {/* Hero Section */}
+      <div className="absolute inset-0 top-[140px] md:top-[120px]">
         <Hero />
         {/* PokemonList Section */}
+        <PokemonList />
       </div>
     </main>
   );

@@ -35,31 +35,33 @@ const Hero = () => {
                   className="w-[400px] md:w-[420px] lg:w-[500px]"
                 />
               </span>
-              <p className="heroParagraph">
-                Introducing a Pokemon Tracker App,
-                <br />
-                This App combines advanced mapping
-                <br />
-                tech with real-time data fetching.
-                <br />
-                You can effortlessly track various
-                <br />
-                Pokemon species,type and abilities
-              </p>
-              <div className="flex items-center justify-between px-10  mt-2 mb-2">
-                <div className="w-full">
-                  <button className="findMe">Find me on</button>
-                </div>
-                <div className="flex items-center mr-10 space-x-3 w-full">
-                  <Link href="https://github.com/Hanfried-Nguegan">
-                    <Image src={github} className="w-7 md:w-9" />
-                  </Link>
-                  <Link href="https://twitter.com/HanfriedNguegan">
-                    <Image src={twitter} className="w-7 md:w-9" />
-                  </Link>
-                  <Link href="https://www.pinterest.com/hanfriednguegan/">
-                    <Image src={pinterest} className="w-7 md:w-9" />
-                  </Link>
+              <div className="flex flex-col items-center">
+                <p className="heroParagraph">
+                  Introducing a Pokemon Tracker App,
+                  <br />
+                  This App combines advanced mapping
+                  <br />
+                  tech with real-time data fetching.
+                  <br />
+                  You can effortlessly track various
+                  <br />
+                  Pokemon species,type and abilities
+                </p>
+                <div className="flex items-center justify-between px-10  mt-2 mb-2">
+                  <div className="w-full">
+                    <button className="findMe">Find me on</button>
+                  </div>
+                  <div className="flex items-center mr-10 space-x-3 w-full">
+                    <Link href="https://github.com/Hanfried-Nguegan">
+                      <Image src={github} className="w-7 md:w-9" />
+                    </Link>
+                    <Link href="https://twitter.com/HanfriedNguegan">
+                      <Image src={twitter} className="w-7 md:w-9" />
+                    </Link>
+                    <Link href="https://www.pinterest.com/hanfriednguegan/">
+                      <Image src={pinterest} className="w-7 md:w-9" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

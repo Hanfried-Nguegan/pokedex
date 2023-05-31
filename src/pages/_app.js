@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Pokemon Tracker</title>
+        <title>Pokemon Tracker App</title>
         <link rel="icon" href="/images/pokeball2.png" />
       </Head>
       <Layout>
