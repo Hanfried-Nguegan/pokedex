@@ -1,4 +1,5 @@
 import pokemonLogo from "./pokemon-logo.svg";
+import pokemon from "./pokemon.svg";
 import pokedex from "./pokedex.svg";
 import pokeball from "./pokeball.svg";
 import searchIcon from "./search_icon.svg";
@@ -20,6 +21,7 @@ import raichu from "./raichu.svg";
 
 export {
   pokemonLogo,
+  pokemon,
   pokedex,
   pokeball,
   searchIcon,

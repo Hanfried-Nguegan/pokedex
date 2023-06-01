@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { pokemonLogo } from "@/images";
+import { pokemon } from "@/images";
 import { navLinks } from "@/constants";
 
 const Navbar = ({ id, title, url }) => {
@@ -17,10 +17,10 @@ const Navbar = ({ id, title, url }) => {
         <Link href="/">
           <div className="p-1 cursor-pointer">
             <Image
-              src={pokemonLogo}
+              src={pokemon}
               alt="Pokemon logo"
               priority="true"
-              className="w-[140px] h-auto md:w-[160px] lg:w-[180px]"
+              className="w-[90px] h-auto md:w-[110px] lg:w-[130px]"
             />
           </div>
         </Link>
