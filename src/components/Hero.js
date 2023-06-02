@@ -16,7 +16,7 @@ import {
 
 const Hero = () => {
   return (
-    <div className="relative w-full mt-1 mb-10 mx-auto">
+    <div className="relative w-full mt-1 mb-24 mx-auto">
       <div className="flex items-center justify-between px-4 py-4 max-w-5xl mx-auto">
         <motion.div
           variants={slideIn("left", "tween", 0.5, 1)}
@@ -89,13 +89,15 @@ const Hero = () => {
         transition={{ duration: 1.5 }}
         className="flex items-center justify-center lg:justify-start mt-3 mb-3 max-w-7xl mx-auto cursor-pointer"
       >
-        <div className="flex items-center justify-center bg-pokemon_texture w-20 h-20 md:w-24 md:h-24 rounded-full shadow-lg ">
-          <Image
-            src={downArrow}
-            width={40}
-            className="motion-safe:animate-bounce"
-          />
-        </div>
+        <Link href="#pokemon_list">
+          <div className="flex items-center justify-center bg-pokemon_texture w-20 h-20 md:w-24 md:h-24 rounded-full shadow-lg ">
+            <Image
+              src={downArrow}
+              width={40}
+              className="motion-safe:animate-bounce"
+            />
+          </div>
+        </Link>
       </motion.div>
     </div>
   );
