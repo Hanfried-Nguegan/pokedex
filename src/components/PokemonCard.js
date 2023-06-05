@@ -4,8 +4,8 @@ import { pokemonCard } from "@/images";
 
 const PokemonCard = () => {
   return (
-    <div className="relative flex items-center justify-center mb-20 ">
-      <Image src={pokemonCard} width={220} />
+    <div className="relative flex items-center justify-center mb-40 ">
+      Pokemon Card
     </div>
   );
 };

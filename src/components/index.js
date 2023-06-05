@@ -5,6 +5,7 @@ import PokemonList from "./PokemonList";
 import Layout from "./Layout";
 import HeroMarquee from "./HeroMarquee";
 import PokemonCard from "./PokemonCard";
+import Weezing from "./Weezing";
 import Title from "./Title";
 
 export {
@@ -15,5 +16,6 @@ export {
   Layout,
   HeroMarquee,
   PokemonCard,
+  Weezing,
   Title,
 };
