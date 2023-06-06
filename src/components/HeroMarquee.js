@@ -28,7 +28,11 @@ const HeroMarquee = () => {
             <p className="text-white font-pokemonSolid text-sm md:text-base">
               {item.title}
             </p>
-            <Image src={pokeball2} className="w-6 md:w-7" />
+            <Image
+              src={pokeball2}
+              alt="pokeball image"
+              className="w-6 md:w-7"
+            />
           </div>
         ))}
       </div>

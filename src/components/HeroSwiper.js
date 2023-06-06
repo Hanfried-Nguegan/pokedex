@@ -33,13 +33,13 @@ const HeroSwiper = () => {
   return (
     <div className="relative w-[240px] min-h-[265px] lg:min-h-[300px] bg-pokemonYellow p-2 rounded-xl shadow-lg">
       <div className="backArrow" onClick={goPrev}>
-        <Image src={BackArrow} width={25} />
+        <Image src={BackArrow} alt="back arrow logo" width={25} />
       </div>
       <div className="forwardArrow" onClick={goNext}>
-        <Image src={ForwardArrow} width={25} />
+        <Image src={ForwardArrow} alt="forward arrow logo" width={25} />
       </div>
       <div className="absolute z-50 top-[20%] left-0 -translate-x-1/2 -translate-y-1/2 bg-white p-1 border-2 border-pokemonYellow rounded-full">
-        <Image src={lightning} width={30} />
+        <Image src={lightning} alt="lightning logo" width={30} />
       </div>
       <Swiper
         navigation={false}
@@ -79,7 +79,7 @@ const HeroSwiper = () => {
         <div className="relative w-full h-full items-center justify-center">
           <SwiperSlide className="opacity-100 scale-100 transition-opacity duration-500 ease-in-out transform">
             <div>
-              <Image src={pichu} width={250} />
+              <Image src={pichu} alt="pichu image" width={250} />
             </div>
             <div className="absolute bottom-[18%] w-full p-3 bg-white rounded-md">
               <p className="text-center font-semibold">
@@ -94,7 +94,7 @@ const HeroSwiper = () => {
           </SwiperSlide>
           <SwiperSlide className="opacity-0 scale-75 transition-opacity duration-500 ease-in-out transform">
             <div>
-              <Image src={pikachu} width={250} />
+              <Image src={pikachu} alt="pikachu image" width={250} />
             </div>
             <div className="absolute bottom-[18%] w-full p-3 bg-white rounded-md">
               <p className="text-center font-semibold">
@@ -109,7 +109,7 @@ const HeroSwiper = () => {
           </SwiperSlide>
           <SwiperSlide className="opacity-0 scale-75 transition-opacity duration-500 ease-in-out transform">
             <div>
-              <Image src={raichu} width={250} />
+              <Image src={raichu} alt="raichu image" width={250} />
             </div>
             <div className="absolute bottom-[18%] w-full p-3 bg-white rounded-md">
               <p className="text-center font-semibold">

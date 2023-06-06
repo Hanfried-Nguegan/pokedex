@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { pokemonCard } from "@/images";
 
-const PokemonCard = () => {
+const PokemonCard = ({ pokemon }) => {
   return (
     <div className="relative flex items-center justify-center mb-40 ">
-      Pokemon Card
+      <h2>{pokemon.name}</h2>
     </div>
   );
 };

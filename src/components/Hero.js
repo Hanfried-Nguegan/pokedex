@@ -26,12 +26,13 @@ const Hero = () => {
         >
           <div className="relative">
             <div className="absolute -top-12 -left-20 z-0 animate-spin-slow ">
-              <Image src={starmie} width={150} />
+              <Image src={starmie} alt="starmie image" width={150} />
             </div>
             <div className="heroCard">
               <span>
                 <Image
                   src={pokemonStatsTracker}
+                  alt="hero title"
                   className="w-[400px] md:w-[420px] lg:w-[500px]"
                 />
               </span>
@@ -53,13 +54,25 @@ const Hero = () => {
                   </div>
                   <div className="flex items-center mr-10 space-x-3 w-full">
                     <Link href="https://github.com/Hanfried-Nguegan">
-                      <Image src={github} className="w-7 md:w-9" />
+                      <Image
+                        src={github}
+                        alt="github logo"
+                        className="w-7 md:w-9"
+                      />
                     </Link>
                     <Link href="https://twitter.com/HanfriedNguegan">
-                      <Image src={twitter} className="w-7 md:w-9" />
+                      <Image
+                        src={twitter}
+                        alt="twitter logo"
+                        className="w-7 md:w-9"
+                      />
                     </Link>
                     <Link href="https://www.pinterest.com/hanfriednguegan/">
-                      <Image src={pinterest} className="w-7 md:w-9" />
+                      <Image
+                        src={pinterest}
+                        alt="pinterest logo"
+                        className="w-7 md:w-9"
+                      />
                     </Link>
                   </div>
                 </div>
@@ -93,6 +106,7 @@ const Hero = () => {
           <div className="flex items-center justify-center bg-pokemon_texture w-20 h-20 md:w-24 md:h-24 rounded-full shadow-lg ">
             <Image
               src={downArrow}
+              alt="down arrow logo"
               width={40}
               className="motion-safe:animate-bounce"
             />
