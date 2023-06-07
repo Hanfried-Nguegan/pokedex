@@ -16,6 +16,8 @@ export default function Home({ pokemonData, nextPageUrl, prevPageUrl }) {
   );
 }
 
+/* Bad Code Please set api routes because page is overloaded */
+
 export async function getServerSideProps() {
   const apiUrl = "https://pokeapi.co/api/v2/pokemon";
 

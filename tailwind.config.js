@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         pokemonYellow: "#fdc20e",
         pokemonBlue: "#2650fe",
+        pokemonCard: "#d9d9d9",
       },
       fontFamily: {
         pokemonSolid: ["pokemonSolid", "cursive"],
