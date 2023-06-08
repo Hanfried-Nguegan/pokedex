@@ -15,6 +15,10 @@ module.exports = {
         pokemonYellow: "#fdc20e",
         pokemonBlue: "#2650fe",
         pokemonCard: "#d9d9d9",
+        pokemonBug: "#964b00",
+        pokemonPoison: "#9d7cc1",
+        pokemonNormal: "#d3d3af",
+        pokemonFlying: "#a1d1f8",
       },
       fontFamily: {
         pokemonSolid: ["pokemonSolid", "cursive"],
