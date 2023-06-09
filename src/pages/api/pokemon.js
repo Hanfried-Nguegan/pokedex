@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export default async function handler(req, res) {
+  const { id } = req.query;
   try {
     const apiUrl = "https://pokeapi.co/api/v2/pokemon";
     const response = await axios.get(apiUrl);

@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
+import { Button } from "@mui/material";
+import { Padding } from "@mui/icons-material";
 
 /* This component needs to be worked on */
 
 const PokemonCard = ({ pokemon }) => {
+  const router = useRouter();
   const [isHovered, setIsHovered] = useState(false);
 
   const typeColors = {
@@ -24,6 +28,10 @@ const PokemonCard = ({ pokemon }) => {
     dragon: "bg-pokemonDragon",
     dark: "bg-pokemonDark",
     fairy: "bg-pokemonFairy",
+  };
+
+  const handleClick = () => {
+    router.push(`/pokemon/${pokemon.id}`);
   };
 
   const handleMouseEnter = () => {
@@ -94,13 +102,22 @@ const PokemonCard = ({ pokemon }) => {
           variants={buttonVariants}
           transition={transition}
         >
-          <motion.button
-            className="bg-pokemonYellow px-5 py-1 text-white font-medium rounded-lg"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
+          <Button
+            sx={{
+              backgroundColor: "#fdc20e",
+              paddingX: "20px",
+              color: "white",
+              borderRadius: "8px",
+              "&:hover": {
+                backgroundColor: "#fdc20e",
+                opacity: 0.8,
+                transition: "opacity 0.5s",
+              },
+            }}
+            onClick={handleClick}
           >
             INSPECT
-          </motion.button>
+          </Button>
         </motion.div>
       )}
       {isHovered && (
