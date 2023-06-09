@@ -297,6 +297,10 @@
   transition: color 0.3s, transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
+.grid > :last-child {
+  margin-bottom: 130px;
+}
+
 /* Tailwindcss Utility Classes */
 
 .weezing {

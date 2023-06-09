@@ -6,22 +6,32 @@ import { motion } from "framer-motion";
 const PokemonCard = ({ pokemon }) => {
   const [isHovered, setIsHovered] = useState(false);
 
+  const typeColors = {
+    grass: "bg-pokemonGrass",
+    fire: "bg-pokemonFire",
+    water: "bg-pokemonWater",
+    bug: "bg-pokemonBug",
+    poison: "bg-pokemonPoison",
+    flying: "bg-pokemonFlying",
+    normal: "bg-pokemonNormal",
+    ground: "bg-pokemonGround",
+    ghost: "bg-pokemonGhost",
+    rock: "bg-pokemonRock",
+    steel: "bg-pokemonSteel",
+    electric: "bg-pokemonElectric",
+    psychic: "bg-pokemonPsychic",
+    ice: "bg-pokemonIce",
+    dragon: "bg-pokemonDragon",
+    dark: "bg-pokemonDark",
+    fairy: "bg-pokemonFairy",
+  };
+
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
-  };
-
-  const typeColors = {
-    grass: "bg-green-500",
-    fire: "bg-red-500",
-    water: "bg-blue-500",
-    bug: "bg-pokemonBug",
-    poison: "bg-pokemonPoison",
-    flying: "bg-pokemonFlying",
-    normal: "bg-pokemonNormal",
   };
 
   const buttonVariants = {
