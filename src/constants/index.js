@@ -24,11 +24,6 @@ export const navLinks = [
     title: "Compare Pokemon",
     url: "/compare_pokemon",
   },
-  {
-    id: "about",
-    title: "About/Contact Us",
-    url: "./about",
-  },
 ];
 
 export const marqueeItems = [

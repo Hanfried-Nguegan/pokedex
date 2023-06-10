@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { SearchBar, Hero, PokemonList, Weezing, Title } from "@/components";
+import { fetchPokemonData } from "./api/pokeApi";
 
 export default function Home() {
   const [pokemonData, setPokemonData] = useState([]);
@@ -8,21 +9,19 @@ export default function Home() {
   const [prevPageUrl, setPrevPageUrl] = useState(null);
 
   useEffect(() => {
-    const fetchPokemonData = async () => {
+    const fetchData = async (url) => {
       try {
-        const response = await axios.get("api/pokemon");
-        const data = response.data;
-
+        const data = await fetchPokemonData(url);
         setPokemonData(data.pokemonData);
-        setNextPageUrl(data.NextPageUrl);
+        setNextPageUrl(data.nextPageUrl);
         setPrevPageUrl(data.prevPageUrl);
       } catch (error) {
         console.log("Error fetching data", error);
       }
     };
-    fetchPokemonData();
+    fetchData();
   }, []);
-
+  console.log(pokemonData);
   return (
     <main className="relative z-0 bg-pokedex-texture bg-cover bg-no-repeat overflow-x-hidden bg-center h-screen">
       <Weezing />

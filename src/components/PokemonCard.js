@@ -52,8 +52,19 @@ const PokemonCard = ({ pokemon }) => {
     visible: { opacity: 1, y: 0 },
   };
 
+  const imageVariants = {
+    hover: {
+      y: -25,
+      transition: { duration: 0.6 },
+    },
+    initial: {
+      y: 0,
+      transition: { duration: 0.6 },
+    },
+  };
+
   const transition = {
-    duration: 0.5,
+    duration: 0.9,
   };
 
   return (
@@ -69,22 +80,22 @@ const PokemonCard = ({ pokemon }) => {
         <motion.img
           src={pokemon.sprites.other["official-artwork"].front_default}
           alt={`${pokemon} image`}
-          className="w-[180px] h-[180px] md:w-[200px] md:h-[200px] group-hover:hidden"
-          initial={{ opacity: 1 }}
-          animate={{ opacity: isHovered ? 0 : 1 }}
-          transition={{ duration: 0.3 }}
+          className="w-[180px] h-[180px] group-hover:hidden mt-2"
+          variants={imageVariants}
+          animate={isHovered ? "hover" : "initial"}
         />
       </div>
-      <div>
+      <div className="flex flex-col items-center space-y-3 w-full">
         <span className="text-black text-opacity-90 text-xl md:text-2xl font-bold font-pokemonSolid ">
           {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}
         </span>
+        <div
+          className={`${
+            typeColors[pokemon.types[0].type.name]
+          } w-4/5 h-2 rounded-full`}
+        />
       </div>
-      <div
-        className={`${
-          typeColors[pokemon.types[0].type.name]
-        } w-4/5 h-2 rounded-full mt-2`}
-      />
+
       <div className="flex items-center justify-between space-x-2 mt-2">
         <span className="text-black text-opacity-60 text-sm">
           HP {pokemon.stats[0].base_stat}/255{" "}
@@ -104,19 +115,19 @@ const PokemonCard = ({ pokemon }) => {
         >
           <Button
             sx={{
-              backgroundColor: "#fdc20e",
+              backgroundColor: "#fdc20e !important",
               paddingX: "20px",
               color: "white",
+              fontWeight: "500",
               borderRadius: "8px",
               "&:hover": {
-                backgroundColor: "#fdc20e",
                 opacity: 0.8,
                 transition: "opacity 0.5s",
               },
             }}
             onClick={handleClick}
           >
-            INSPECT
+            POWER UP
           </Button>
         </motion.div>
       )}
