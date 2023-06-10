@@ -86,7 +86,7 @@ const PokemonCard = ({ pokemon }) => {
         />
       </div>
       <div className="flex flex-col items-center space-y-3 w-full">
-        <span className="text-black text-opacity-90 text-xl md:text-2xl font-bold font-pokemonSolid ">
+        <span className="text-black text-opacity-90 text-xl md:text-2xl font-bold font-pokemonSolid tracking-widest ">
           {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}
         </span>
         <div
